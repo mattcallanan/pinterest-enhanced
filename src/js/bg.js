@@ -59,7 +59,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 //////////////////////////////////////////////
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-	if ((tab.url && tab.url.match("[\S]*\.pinterest\.com").length != 0 )) {
+	if ((tab.url && tab.url.match("[\S]*\.pinterest\.com[\.*]?").length != 0 )) {
 		var actived = getOption('pin_grid') == "ON";
 		var fixed = getOption('pin_grid_fixed') == "ON";
 		var height = getHeight()
