@@ -19,7 +19,7 @@
     "tabs",
     "activeTab",
     "notifications",
-    "*://*.pinterest.com/*"
+    "*://*.pinterest.com*/*"
   ],
   "web_accessible_resources": [
     "css/fixedHeight.css",
